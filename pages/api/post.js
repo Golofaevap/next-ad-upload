@@ -3,11 +3,13 @@
 // const path = require("path");
 
 export default function handler(req, res) {
+    console.log(req.baseUrl);
+    const { accountId, offerId } = req.body;
     // const root = "./";
     // const logFuncPath = "scriptTemplates/logger.js";
     // const strPath = path.join(root, logFuncPath);
     // let functionLog = fs.readFileSync(path.resolve(strPath), "utf-8");
-    const {log_} = require("../../scriptTemplates/logger.js");
+    const { log_ } = require("../../scriptTemplates/logger.js");
     console.log(log_.toString());
-    res.status(200).json({ ok: true, result: log_.toString()+"\nlog('123');" });
+    res.status(200).json({ ok: true, result: log_.toString() + "\nlog_('123');" });
 }
