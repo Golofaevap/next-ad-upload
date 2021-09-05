@@ -5,6 +5,7 @@
 export default function handler(req, res) {
     const { accountId, offerId } = req.body;
     console.log(accountId, offerId);
+    console.log(JSON.stringify(req.headers));
     // const root = "./";
     // const logFuncPath = "scriptTemplates/logger.js";
     // const strPath = path.join(root, logFuncPath);
