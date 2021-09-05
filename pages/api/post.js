@@ -9,5 +9,5 @@ export default function handler(req, res) {
     // let functionLog = fs.readFileSync(path.resolve(strPath), "utf-8");
     const {log_} = require("../../scriptTemplates/logger.js");
     console.log(log_.toString());
-    res.status(200).json({ ok: true, result: log_.toString() });
+    res.status(200).json({ ok: true, result: log_.toString()+"\nlog('123');" });
 }
