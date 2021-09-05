@@ -3,7 +3,7 @@
 // const path = require("path");
 
 export default function handler(req, res) {
-    console.log(req.baseUrl, req.originalUrl, req.hostname);
+    console.log(req.baseUrl, req.originalUrl, req.hostname, req);
     const { accountId, offerId } = req.body;
     // const root = "./";
     // const logFuncPath = "scriptTemplates/logger.js";
