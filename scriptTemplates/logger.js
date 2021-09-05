@@ -1,3 +1,3 @@
-function log_(string) {
+export function log_(string) {
     Logger.log(string);
 }
