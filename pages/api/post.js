@@ -2,7 +2,7 @@
 // const fs = require("fs");
 
 // const path = require("path");
-const { log_ } = require("../../scriptTemplates/logger.js");
+const { log_ } = require("../../scriptTemplates/service.js");
 import { createSearchCampaign } from "../../scriptTemplates/campaigns.js";
 import { getOpts_777 } from "../../scriptTemplates/opts.js";
 
@@ -16,7 +16,6 @@ export default function handler(req, res) {
     // const offer = offersList.find((a) => a.id == offerId);
     // if (!offer) return res.status(200).json({ ok: true, result: log_.toString() + "\nlog_('test function 778');" });
 
-    // console.log(JSON.stringify(req.headers));
 
     let result = "\n";
     result += getOpts_777.toString();
